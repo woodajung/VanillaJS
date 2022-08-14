@@ -1,0 +1,197 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(160deg, #3498DB, #20BDFF);
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: #ffffff;
+  padding: 5px 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+input[type=text] {
+  padding: 15px;
+  border: 1px solid #e4eff8;
+  background-color: #e4eff8;
+  border-radius: 10px;
+  -webkit-tranistion: border .5s;
+}
+
+input[type=text]:focus {
+  outline: 0;
+  border-color: #1F78B4;
+}
+
+input[type=submit],
+button {
+  padding: 15px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background-color: #3498DB;
+  border-radius: 10px;
+  -webkit-tranistion: border .5s;
+  cursor: pointer;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active,
+button:hover,
+button:active {
+  background-color: #1F78B4;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.footer {
+  padding: 15px 0;
+}
+
+.footer a {
+  color: #999;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
+.main .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+  gap: 15px;
+}
+
+.main .header button {
+  padding: 8px 15px;
+}
+
+.main .content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.main .content .clock {
+  width: 100%;
+  background: #e4eff8;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.main .content .weather {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-end
+}
+
+.main .content .todo {
+  width: 60%;
+}
+
+.main .content .todo input[type=text] {
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+  width: 40%;
+}
+
+.main .content .todo .todo__list {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin: 16px 16px 16px 0;
+}
+
+.main .content .todo .todo__list:empty {
+  border-color: transparent;
+}
+
+.main .content .todo .todo__list .todo__item {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .content .todo .todo__list .todo__item .todo__delete {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  box-sizing: border-box;
+  line-height: 24px;
+  display: inline-block;
+  border: solid 0 #3498DB;
+  border-radius: 24px;
+  transition: all 0.25s ease-out;
+  margin-left: 20px;
+}
+.main .content .todo .todo__list .todo__item .todo__delete:before,
+.main .content .todo .todo__list .todo__item .todo__delete:after {
+  transform: rotate(-45deg);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2px;
+  margin-left: -10px;
+  display: block;
+  height: 3px;
+  width: 20px;
+  background-color: #ffffff;
+  transition: all 0.25s ease-out;
+  border-radius: 30px;
+}
+
+.main .content .todo .todo__list .todo__item .todo__delete:after {
+  transform: rotate(-135deg);
+}
+
+.main .content .todo .todo__list .todo__item .todo__delete:hover:before {
+  transform: rotate(45deg);
+}
+
+.main .content .todo .todo__list .todo__item .todo__delete:hover:after {
+  transform: rotate(-45deg);
+}
+
+.main .content .quote {
+  width: 40%;
+}
+
+.main .content .quote .quote__text {
+    display: flex;
+    flex-direction: column;
+    background: #e4eff8;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
